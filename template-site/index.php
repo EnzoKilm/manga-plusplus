@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'header.php'; ?>
+
+	<section>
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="index.php">Manga++</a></li>
+				  <li class="active">Accueil</li>
+				</ol>
+			</div>
+		</div>
+	</section>
 	
 	<section id="slider"><!--slider-->
 		<div class="container">

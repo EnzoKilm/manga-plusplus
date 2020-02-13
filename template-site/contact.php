@@ -3,6 +3,12 @@
 <?php include 'header.php'; ?>
 	
     <div id="contact-page" class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="index.php">Manga++</a></li>
+                <li class="active">Contact</li>
+            </ol>
+        </div>
     	<div class="bg">
     		<div class="row">  	
 	    		<div class="col-sm-8">

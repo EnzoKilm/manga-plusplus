@@ -39,7 +39,7 @@
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
 								<!-- Si connecté -->
-								<li><a href="profil.php"><i class="fa fa-user"></i> Profil</a></li> 
+								<li><a href="profile.php"><i class="fa fa-user"></i> Profil</a></li> 
 								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Panier</a></li>
 								<li><a href="contact.php"><i class="fa fa-phone"></i> Contact</a></li>
 								<!-- Si déconnecté -->
