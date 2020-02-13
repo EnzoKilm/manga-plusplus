@@ -871,7 +871,8 @@ h2.title {
 }
 
 .productinfo img {
-    width: 100%;
+    width: auto;
+    max-height: 300px;
 }
 
 .productinfo {
@@ -2441,4 +2442,13 @@ textarea {
 
 .contact-info .social-networks ul li a:hover {
     color: #FE980F;
+}
+
+.footer-right{
+    float:right;
+    width:30%
+}
+
+.footer-left{
+    width:70%
 }
