@@ -69,6 +69,16 @@ a#scrollUp i {
 *******Header CSS******
 **************************/
 
+.header-left {
+    float: left;
+    width: 45%;
+}
+
+.header-right {
+    float: right;
+    width: auto;
+}
+
 .header_top {
     background: none repeat scroll 0 0 #F0F0E9;
 }
@@ -873,6 +883,7 @@ h2.title {
 .productinfo img {
     width: auto;
     max-height: 300px;
+    max-width: 100%;
 }
 
 .category-img img {
@@ -2324,7 +2335,6 @@ textarea {
     background: #FE980F;
     border: 0 none;
     border-radius: 0;
-    margin-top: 16px;
 }
 
 .blank-arrow {
@@ -2363,6 +2373,10 @@ textarea {
     margin-bottom: 20px;
 }
 
+#contact-page {
+    padding-top : 45px;
+}
+
 #contact-page .form-control::-moz-placeholder {
     color: #8D8D8D;
 }
@@ -2387,7 +2401,6 @@ textarea {
 
 #main-contact-form .btn-primary {
     margin-bottom: 15px;
-    margin-top: 20px;
 }
 
 #contact-page .form-control:focus,
