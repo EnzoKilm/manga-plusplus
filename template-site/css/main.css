@@ -2565,6 +2565,12 @@ textarea {
     background-size: cover;
 }
 
+#log_content .bg-register-image {
+    background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+    background-position: center;
+    background-size: cover;
+}
+
 #log_content .p-5 {
     padding: 3rem !important;
 }

@@ -43,7 +43,7 @@
 								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Panier</a></li>
 								<li><a href="contact.php"><i class="fa fa-phone"></i> Contact</a></li>
 								<!-- Si déconnecté -->
-								<li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Connexion/inscription</a></li>
+								<li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
 								<!-- Si connecté -->
 								<li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
 							</ul>
