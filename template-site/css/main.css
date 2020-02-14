@@ -2469,3 +2469,302 @@ textarea {
 .footer-left{
     width:70%
 }
+
+/*************************
+******* Login CSS ********
+**************************/
+
+#log_content .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    font-size: 100%;
+}
+
+#log_content .justify-content-center {
+    justify-content: center !important;
+}
+
+#log_content .col-xl-10, #log_content .col-lg-12,
+#log_content .col-md-9, #log_content .col-lg-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+#log_content .col-xl-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+#log_content .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+#log_content .col-md-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+#log_content .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+}
+
+#log_content .o-hidden {
+    overflow: hidden !important;
+}
+
+#log_content .border-0 {
+    border: 0 !important;
+}
+
+#log_content .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+#log_content .my-5 {
+    margin-bottom: 3rem !important;
+}
+
+#log_content .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+#log_content .p-0 {
+    padding: 0 !important;
+}
+
+#log_content .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+#log_content .d-none {
+    display: none !important;
+}
+
+#log_content .d-lg-block {
+    display: block !important;
+}
+
+#log_content .bg-login-image {
+    background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+    background-position: center;
+    background-size: cover;
+}
+
+#log_content .p-5 {
+    padding: 3rem !important;
+}
+
+#log_content .text-center {
+  text-align: center !important;
+}
+
+#log_content .h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#log_content .text-gray-900 {
+  color: #3a3b45 !important;
+}
+
+#log_content .mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+#log_content form.user {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+#log_content form.user .custom-checkbox.small label {
+    line-height: 1.5rem;
+}
+
+#log_content form.user .form-control-user {
+    font-size: 100%;
+    border-radius: 10rem;
+    padding: 1.5rem 1rem;
+}
+
+#log_content form.user .btn-user {
+    font-size: 100%;
+    border-radius: 10rem;
+    padding: 0.75rem 1rem;
+}
+
+#log_content .form-group {
+  margin-bottom: 1rem;
+}
+#log_content .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #log_content .form-control {
+        transition: none;
+    }
+}
+
+#log_content .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#log_content .custom-checkbox .custom-control-label::before {
+    border-radius: 0.35rem;
+}
+
+#log_content .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+#log_content .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #858796;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.35rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+@media (prefers-reduced-motion: reduce) {
+    #log_content .btn {
+        transition: none;
+    }
+}
+  
+#log_content .btn:hover {
+    color: #858796;
+    text-decoration: none;
+}
+  
+#log_content .btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+#log_content .a.btn.disabled {
+    pointer-events: none;
+}
+
+#log_content .btn-primary {
+    color: #fff;
+    background-color: #FE980F;
+    border-color: #FE980F;
+}
+
+#log_content .btn-primary:hover {
+    color: #fff;
+    background-color: #ffad41;
+    border-color: #ffad41;
+}
+
+#log_content .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem #fcb14f80;
+}
+
+#log_content .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #FE980F;
+    border-color: #FE980F;
+}
+
+#log_content .btn-block {
+    display: block;
+    width: 100%;
+}
+  
+#log_content .btn-block + .btn-block {
+    margin-top: 0.5rem;
+}
+  
+#log_content input[type="submit"].btn-block,
+#log_content input[type="reset"].btn-block,
+#log_content input[type="button"].btn-block {
+    width: 100%;
+}
+
+#log_content .btn-google {
+    color: #fff;
+    background-color: #ea4335;
+    border-color: #fff;
+}
+  
+#log_content .btn-google:hover {
+    color: #fff;
+    background-color: #e12717;
+    border-color: #e6e6e6;
+}
+  
+#log_content .btn-google:focus, .btn-google.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+#log_content .btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #fff;
+  }
+  
+#log_content .btn-facebook:hover {
+    color: #fff;
+    background-color: #30497c;
+    border-color: #e6e6e6;
+}
+  
+#log_content .btn-facebook:focus, .btn-facebook.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+#log_content input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#log_content .small {
+    font-size: 100%;
+}
