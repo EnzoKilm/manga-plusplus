@@ -25,7 +25,7 @@
                         <tbody>
                             <tr>
                                 <td class="cart_product">
-                                    <a href=""><img src="images/home/titeuf_cover.jpg" alt="Titeuf"></a>
+                                    <a href=""><img src="public_site/images/home/titeuf_cover.jpg" alt="Titeuf"></a>
                                 </td>
                                 <td class="cart_description">
                                     <h4><a href="">Titeuf, Tome 3 : Ça épate les filles</a></h4>
@@ -50,7 +50,7 @@
                             </tr>
                             <tr>
                                 <td class="cart_product">
-                                    <a href=""><img src="images/home/naruto_cover.png" alt="Naruto"></a>
+                                    <a href=""><img src="public_site/images/home/naruto_cover.png" alt="Naruto"></a>
                                 </td>
                                 <td class="cart_description">
                                     <h4><a href="">Naruto, Tome 63</a></h4>

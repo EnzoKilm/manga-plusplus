@@ -36,10 +36,10 @@
 
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.scrollUp.min.js"></script>
-<script src="js/price-range.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/main.js"></script>
+<script src="public_site/js/jquery.js"></script>
+<script src="public_site/js/bootstrap.min.js"></script>
+<script src="public_site/js/jquery.scrollUp.min.js"></script>
+<script src="public_site/js/price-range.js"></script>
+<script src="public_site/js/jquery.prettyPhoto.js"></script>
+<script src="public_site/js/main.js"></script>
 <script src="https://kit.fontawesome.com/79706d8da0.js" crossorigin="anonymous"></script>
