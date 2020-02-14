@@ -9,7 +9,7 @@ NOM  | Prénom
 AMELINE  | Matthias
 BARBEREAU  | Maxime
 BEAUCHAMP  | Enzo
-BELLEIL  | Matthieu
+BELLEIL  | Mathieu
 BELNOU  | Kylian
 
 # Énoncé
