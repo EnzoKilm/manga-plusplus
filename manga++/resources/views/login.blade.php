@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="breadcrumbs">
                     <ol class="breadcrumb">
-                    <li><a href="index.php">Manga++</a></li>
+                    <li><a href="{{ url('/') }}">Manga++</a></li>
                     <li class="active">Connexion</li>
                     </ol>
                 </div>
@@ -46,14 +46,14 @@
                                                         <label class="custom-control-label" for="customCheck">Se souvenir de moi</label>
                                                     </div>
                                                 </div>
-                                                <a href="index.php" class="btn btn-primary btn-user btn-block">
+                                                <a href="{{ url('/') }}" class="btn btn-primary btn-user btn-block">
                                                     Connexion
                                                 </a>
                                                 <hr>
-                                                <a href="index.php" class="btn btn-google btn-user btn-block">
+                                                <a href="" class="btn btn-google btn-user btn-block">
                                                     <i class="fab fa-google fa-fw"></i> Connexion avec Google
                                                 </a>
-                                                <a href="index.php" class="btn btn-facebook btn-user btn-block">
+                                                <a href="" class="btn btn-facebook btn-user btn-block">
                                                     <i class="fab fa-facebook-f fa-fw"></i> Connexion avec Facebook
                                                 </a>
                                             </form>

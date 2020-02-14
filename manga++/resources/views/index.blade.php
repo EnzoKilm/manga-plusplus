@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="breadcrumbs">
                     <ol class="breadcrumb">
-                      <li><a href="index.php">Manga++</a></li>
+                      <li><a href="{{ url('/') }}">Manga++</a></li>
                       <li class="active">Accueil</li>
                     </ol>
                 </div>

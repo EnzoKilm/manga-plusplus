@@ -29,7 +29,7 @@
 				<div class="row">
 					<div class="col-md-4 clearfix header-left">
 						<div class="logo pull-left">
-							<a href="index.php"><img src="public_site/images/home/logo.png" alt="" /></a>
+							<a href="{{ url('/') }}"><img src="public_site/images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="search_box pull-right">
 							<input type="text" placeholder="Rechercher"/>
