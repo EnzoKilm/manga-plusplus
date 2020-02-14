@@ -9,7 +9,7 @@
 								<li><a href="#"><i class="fa fa-phone"></i> 02 03 04 05 06</a></li>
 								<li><a href="#"><i class="fa fa-envelope"></i> contact@mangaplusplus.fr</a></li>
 								<li><a href="#"><i class="fas fa-copyright"></i> Copyright © 2020 Manga++. All rights reserved.</a></li>
-								<li><a href="#"><i class="fa fa-users"></i> Crée par des étudiants</a></li>
+								<li><a href="#"><i class="fa fa-users"></i> Créé par des étudiants</a></li>
 							</ul>
 						</div>
 					</div>

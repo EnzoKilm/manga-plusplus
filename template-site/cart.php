@@ -32,7 +32,7 @@
 								<p>ID: 1</p>
 							</td>
 							<td class="cart_price">
-								<p>$59</p>
+								<p>59€</p>
 							</td>
 							<td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -42,7 +42,7 @@
 								</div>
 							</td>
 							<td class="cart_total">
-								<p class="cart_total_price">$118</p>
+								<p class="cart_total_price">118€</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -57,7 +57,7 @@
 								<p>ID: 2</p>
 							</td>
 							<td class="cart_price">
-								<p>$59</p>
+								<p>59€</p>
 							</td>
 							<td class="cart_quantity">
 								<div class="cart_quantity_button">
@@ -67,7 +67,7 @@
 								</div>
 							</td>
 							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
+								<p class="cart_total_price">59€</p>
 							</td>
 							<td class="cart_delete">
 								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>

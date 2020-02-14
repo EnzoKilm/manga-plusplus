@@ -122,7 +122,7 @@
 							<h2>Tranche de prix</h2>
 							<div class="well text-center">
 								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[0,20]" id="sl2" ><br />
-								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 100</b>
+								 <b class="pull-left">0€</b> <b class="pull-right">100€</b>
 							</div>
 						</div><!--/price-range-->
 						
@@ -141,13 +141,13 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-										<h2>$56</h2>
+										<h2>56€</h2>
 										<p>Titeuf, Tome 3 : Ça épate les filles</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>56€</h2>
 											<p>Titeuf, Tome 3 : Ça épate les filles</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
@@ -160,13 +160,13 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="images/home/naruto_cover.png" alt="Naruto" />
-										<h2>$56</h2>
+										<h2>56€</h2>
 										<p>Naruto, Tome 63</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>56€</h2>
 											<p>Naruto, Tome 63</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
@@ -179,13 +179,13 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-										<h2>$56</h2>
+										<h2>56€</h2>
 										<p>Titeuf, Tome 3 : Ça épate les filles</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>56€</h2>
 											<p>Titeuf, Tome 3 : Ça épate les filles</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
@@ -198,13 +198,13 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="images/home/naruto_cover.png" alt="Naruto" />
-										<h2>$56</h2>
+										<h2>56€</h2>
 										<p>Naruto, Tome 63</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>56€</h2>
 											<p>Naruto, Tome 63</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
@@ -217,13 +217,13 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-										<h2>$56</h2>
+										<h2>56€</h2>
 										<p>Titeuf, Tome 3 : Ça épate les filles</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>56€</h2>
 											<p>Titeuf, Tome 3 : Ça épate les filles</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
@@ -236,13 +236,13 @@
 								<div class="single-products">
 									<div class="productinfo text-center">
 										<img src="images/home/naruto_cover.png" alt="Naruto" />
-										<h2>$56</h2>
+										<h2>56€</h2>
 										<p>Naruto, Tome 63</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<h2>$56</h2>
+											<h2>56€</h2>
 											<p>Naruto, Tome 63</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
@@ -268,7 +268,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/naruto_cover.png" alt="" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Naruto, Tome 63</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -281,7 +281,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/naruto_cover.png" alt="" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Naruto, Tome 63</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -294,7 +294,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/naruto_cover.png" alt="" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Naruto, Tome 63</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -307,7 +307,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/naruto_cover.png" alt="" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Naruto, Tome 63</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -323,7 +323,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Titeuf, Tome 3 : Ça épate les filles</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -336,7 +336,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Titeuf, Tome 3 : Ça épate les filles</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -349,7 +349,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Titeuf, Tome 3 : Ça épate les filles</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -362,7 +362,7 @@
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
 												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-												<h2>$56</h2>
+												<h2>56€</h2>
 												<p>Titeuf, Tome 3 : Ça épate les filles</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
@@ -385,7 +385,7 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/naruto_cover.png" alt="Naruto" />
-													<h2>$56</h2>
+													<h2>56€</h2>
 													<p>Naruto, Tome 63</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 												</div>
@@ -398,7 +398,7 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-													<h2>$56</h2>
+													<h2>56€</h2>
 													<p>Titeuf, Tome 3 : Ça épate les filles</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 												</div>
@@ -411,7 +411,7 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/naruto_cover.png" alt="Naruto" />
-													<h2>$56</h2>
+													<h2>56€</h2>
 													<p>Naruto, Tome 63</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 												</div>
@@ -426,7 +426,7 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-													<h2>$56</h2>
+													<h2>56€</h2>
 													<p>Titeuf, Tome 3 : Ça épate les filles</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 												</div>
@@ -439,7 +439,7 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/naruto_cover.png" alt="Naruto" />
-													<h2>$56</h2>
+													<h2>56€</h2>
 													<p>Naruto, Tome 63</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 												</div>
@@ -452,7 +452,7 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-													<h2>$56</h2>
+													<h2>56€</h2>
 													<p>Titeuf, Tome 3 : Ça épate les filles</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 												</div>
