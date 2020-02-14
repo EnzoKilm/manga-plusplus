@@ -45,12 +45,12 @@
                                         <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
                                         <li><a href="{{ url('/deconnexion') }}"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
                                     @else
-                                        <li><a href="{{ url('/profil') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
-                                        <li><a href="{{ url('/profil') }}"><i class="fa fa-phone"></i> Contact</a></li>
-                                        <li><a href="{{ route('connexion') }}"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+                                        <li><a href="{{ url('/panier') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
+                                        <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
+                                        <li><a href="{{ url('/connexion') }}"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
 
                                         @if (Route::has('register'))
-                                            <li><a href="{{ route('profil') }}"><i class="fa fa-user-plus"></i> Inscription</a></li>
+                                            <li><a href="{{ url('/inscription') }}"><i class="fa fa-user-plus"></i> Inscription</a></li>
                                         @endif
                                     @endauth
                                 @endif
