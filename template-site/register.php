@@ -7,7 +7,7 @@
 			<div class="breadcrumbs">
 				<ol class="breadcrumb">
 				  <li><a href="index.php">Manga++</a></li>
-				  <li class="active">Connexion</li>
+				  <li class="active">Inscription</li>
 				</ol>
 			</div>
 		</div>
@@ -45,23 +45,23 @@
                                             <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Répéter le mot de passe">
                                         </div>
                                     </div>
-                                    <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    <a href="login.php" class="btn btn-primary btn-user btn-block">
                                     S'inscrire
                                     </a>
                                     <hr>
-                                    <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <a href="index.php" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> S'inscrire avec Google
                                     </a>
-                                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <a href="index.php" class="btn btn-facebook btn-user btn-block">
                                     <i class="fab fa-facebook-f fa-fw"></i> S'inscrire avec Facebook
                                     </a>
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Mot de passe oublié?</a>
+                                    <a class="small" href="forgot-password.php">Mot de passe oublié?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="login.html">Déjà un compte? Connecte toi!</a>
+                                    <a class="small" href="login.php">Déjà un compte? Connecte toi!</a>
                                 </div>
                             </div>
                         </div>

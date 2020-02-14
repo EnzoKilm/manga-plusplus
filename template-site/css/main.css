@@ -2571,6 +2571,12 @@ textarea {
     background-size: cover;
 }
 
+#log_content .bg-password-image {
+    background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+    background-position: center;
+    background-size: cover;
+}
+
 #log_content .p-5 {
     padding: 3rem !important;
 }
