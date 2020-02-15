@@ -23,7 +23,8 @@ class UserController extends Controller
      */
     public function login()
     {
-        return view('login');
+        $title = 'Connexion';
+        return view('login',compact('title'));
     }
 
     /**
@@ -33,26 +34,7 @@ class UserController extends Controller
      */
     public function register()
     {
-        return view('register');
-    }
-
-    /**
-     * Show the logout page.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function logout()
-    {
-        return view('logout');
-    }
-
-    /**
-     * Show the forgot-password page.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function forgot_password()
-    {
-        return view('forgot_password');
+        $title = 'Inscription';
+        return view('register',compact('title'));
     }
 }

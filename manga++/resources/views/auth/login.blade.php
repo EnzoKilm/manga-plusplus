@@ -74,7 +74,6 @@
                                                     <a class="small" href="{{ route('register') }}">Créer un compte!</a>
                                                 </div>
                                             </form>
-                                            <hr>
                                         </div>
                                     </div>
                                 </div>

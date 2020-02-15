@@ -14,7 +14,8 @@ class PagesController extends Controller
      */
     public function profile()
     {
-        return view('profile');
+        $title = 'Profil';
+        return view('profile',compact('title'));
     }
 
     /**
@@ -24,7 +25,8 @@ class PagesController extends Controller
      */
     public function cart()
     {
-        return view('cart');
+        $title = 'Panier';
+        return view('cart',compact('title'));
     }
 
     /**
@@ -34,6 +36,7 @@ class PagesController extends Controller
      */
     public function contact()
     {
-        return view('contact');
+        $title = 'Contact';
+        return view('contact',compact('title'));
     }
 }
