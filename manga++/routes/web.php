@@ -20,10 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/profil', 'PagesController@profile')->name('profile');
-// Route::get('/connexion', 'UserController@login')->name('login');
-// Route::get('/inscription', 'UserController@register')->name('register');
-// Route::get('/deconnexion', 'UserController@logout')->name('logout');
-// Route::get('/mdp-oublie', 'UserController@forgot_password')->name('forgot_password');
 Route::get('/panier', 'PagesController@cart')->name('cart');
 Route::get('/contact', 'PagesController@contact')->name('contact');
 
