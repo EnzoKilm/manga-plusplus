@@ -36,10 +36,10 @@
                                             <form class="user" method="POST" action="{{ route('login') }}">
                                                 @csrf
                                                 <div class="form-group">
-                                                    <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" required placeholder="Entrez votre adresse mail...">
+                                                    <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entrez votre adresse mail..." required autocomplete="email" autofocus>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" required placeholder="Mot de passe">
+                                                    <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Mot de passe" name="password" required autocomplete="current-password">
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox small">
@@ -49,9 +49,9 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <a href="{{ url('/') }}" class="btn btn-primary btn-user btn-block">
-                                                    Connexion
-                                                </a>
+                                                <button type="submit" class="btn btn-primary">
+                                                    {{ __('Connexion') }}
+                                                </button>
                                                 <div class="text-center">
                                                     @if (Route::has('password.request'))
                                                         <a class="small" href="{{ route('password.request') }}">
