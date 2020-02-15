@@ -48,20 +48,13 @@
                                         <a href="login.php" class="btn btn-primary btn-user btn-block">
                                         S'inscrire
                                         </a>
-                                        <hr>
-                                        <a href="index.php" class="btn btn-google btn-user btn-block">
-                                        <i class="fab fa-google fa-fw"></i> S'inscrire avec Google
-                                        </a>
-                                        <a href="index.php" class="btn btn-facebook btn-user btn-block">
-                                        <i class="fab fa-facebook-f fa-fw"></i> S'inscrire avec Facebook
-                                        </a>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.php">Mot de passe oublié?</a>
+                                        <a class="small" href="{{ url('/mdp-oublie') }}">Mot de passe oublié?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="login.php">Déjà un compte? Connecte toi!</a>
+                                        <a class="small" href="{{ url('/connexion') }}">Déjà un compte? Connecte toi!</a>
                                     </div>
                                 </div>
                             </div>

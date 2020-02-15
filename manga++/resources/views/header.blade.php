@@ -43,21 +43,24 @@
                                         <li><a href="{{ url('/profil') }}"><i class="fa fa-user"></i> Profil</a></li>
                                         <li><a href="{{ url('/panier') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
                                         <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
-                                        <li><a href="{{ url('/deconnexion') }}"><i class="fas fa-sign-out-alt"></i> Déconnexion</a></li>
                                         <li>
-                                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                            <a class="dropdown-item" href="#"
                                                 onclick="event.preventDefault();
                                                             document.getElementById('logout-form').submit();">
-                                                {{ __('Logout') }}
+                                                <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                                             </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                @csrf
+                                            </form>
                                         </li>
+                                    </a>
                                     @else
                                         <li><a href="{{ url('/panier') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
                                         <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
-                                        <li><a href="{{ url('/connexion') }}"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
+                                        <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
 
                                         @if (Route::has('register'))
-                                        <li><a href="{{ url('/inscription') }}"><i class="fa fa-user-plus"></i> Inscription</a></li>
+                                        <li><a href="{{ route('register') }}"><i class="fa fa-user-plus"></i> Inscription</a></li>
                                         @endif
                                     @endauth
                                 @endif
