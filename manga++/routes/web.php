@@ -23,6 +23,6 @@ Route::get('/profil', 'PagesController@profile')->name('profile');
 Route::get('/panier', 'PagesController@cart')->name('cart');
 Route::get('/contact', 'PagesController@contact')->name('contact');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

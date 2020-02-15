@@ -31,8 +31,10 @@
                                                 <h1 class="h4 text-gray-900 mb-2">Mot de passe oublié?</h1>
                                                 <p class="mb-4">Pas de soucis, ça arrive. Entre juste ton email en dessous et nous t'enverrons un lien pour réinitialiser ton mot de passe!</p>
                                             </div>
-                                            <form class="user" method="POST" action="{{ route('password.update') }}">
+                                            <form class="user" method="POST" action="{{ route('password.email') }}">
                                                 @csrf
+
+                                                <input type="hidden" name="token" value="{{ $token ?? '' }}">
 
                                                 <div class="form-group">
                                                     <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entrez votre adresse mail..." name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
@@ -43,9 +45,9 @@
                                                         </span>
                                                     @enderror
                                                 </div>
-                                                <a href="login.php" class="btn btn-primary btn-user btn-block">
-                                                    Réinitialiser le mot de passe
-                                                </a>
+                                                <button type="submit" class="btn btn-primary btn-user btn-block">
+                                                    {{ __('Réinitialiser le mot de passe') }}
+                                                </button>
                                             </form>
                                             <hr>
                                             <div class="text-center">
