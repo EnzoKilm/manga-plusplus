@@ -37,7 +37,7 @@
                                                 <input type="hidden" name="token" value="{{ $token }}">
 
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
 
                                                     @error('email')
                                                         <span class="invalid-feedback" role="alert">
