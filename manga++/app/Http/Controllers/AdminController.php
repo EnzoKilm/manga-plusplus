@@ -24,7 +24,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin/index');
+        $userCount = User::count();
+        return view('admin/index', compact('userCount'));
     }
 
     /**
