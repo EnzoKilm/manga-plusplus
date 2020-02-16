@@ -15,6 +15,8 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -26,7 +28,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-book"></i>
         </div>
@@ -38,7 +40,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Tableau de bord</span></a>
       </li>
@@ -51,7 +53,7 @@
         Stock
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item - Mouvements Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-exchange-alt"></i>
@@ -71,7 +73,7 @@
         </div>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item - Locations Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-shopping-cart"></i>
@@ -91,6 +93,26 @@
         </div>
       </li>
 
+        <!-- Nav Item - Books Collapse Menu -->
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBooks" aria-expanded="true" aria-controls="collapseBooks">
+            <i class="fas fa-book-open"></i>
+            <span>Livres</span>
+        </a>
+        <div id="collapseBooks" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="#">
+                <i class="fas fa-tags"></i>
+                <span>Tout voir</span>
+            </a>
+            <a class="collapse-item" href="#">
+                <i class="fas fa-plus"></i>
+                <span>Ajouter</span>
+            </a>
+            </div>
+        </div>
+        </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -99,9 +121,9 @@
         Utilisateurs
       </div>
 
-      <!-- Nav Item - Charts -->
+      <!-- Nav Item - Clients -->
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="clients.php">
           <i class="fas fa-users"></i>
           <span>Clients</span></a>
       </li>
@@ -131,7 +153,7 @@
     </button>
 
     <!-- Topbar Search -->
-    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+    <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
       <div class="input-group">
         <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
         <div class="input-group-append">
@@ -140,7 +162,7 @@
           </button>
         </div>
       </div>
-    </form>
+    </form> -->
 
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
