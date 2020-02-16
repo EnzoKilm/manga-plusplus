@@ -8,7 +8,7 @@
 
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Abonnements</h1>
-        <p class="mb-4">Ici vous pouvez voir tous les utilisateurs enregistrés sur le site.<br/>Pour modifier un utilisateur vous devez simplement cliquer sur une de ses informations dans le tableau ci-dessous.</p>
+        <p class="mb-4">Ici vous pouvez gérer les différents abonnements que vous proposez aux clients.<br/>Pour modifier un abonnement vous devez simplement cliquer le nom de celui-ci dans le tableau ci-dessous.<br/>Pour supprimer un abonnement cliquez sur "Supprimer" à droite dans la ligne correspondante.</p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
