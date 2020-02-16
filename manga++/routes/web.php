@@ -27,3 +27,9 @@ Auth::routes(['verify' => true]);
 
 Route::get('/admin', 'AdminController@index')->name('admin.index');
 Route::get('/admin/clients', 'AdminController@clients')->name('admin.clients');
+Route::get('/admin/abonnements', 'SubscriptionController@index')->name('admin.subscriptions');
+Route::get('/admin/abonnements/ajouter', 'SubscriptionController@add')->name('admin.subscriptions.add');
+Route::post('/admin/abonnements/store', 'SubscriptionController@store')->name('admin.subscriptions.store');
+Route::get('/admin/abonnements/{id}/modifier', 'SubscriptionController@edit')->name('admin.subscriptions.edit');
+Route::put('/admin/abonnements/{id}/update', 'SubscriptionController@update')->name('admin.subscriptions.update');
+Route::get('/admin/abonnements/{id}/delete', 'SubscriptionController@delete')->name('admin.subscriptions.delete');

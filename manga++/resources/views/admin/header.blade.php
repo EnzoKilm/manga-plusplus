@@ -129,6 +129,26 @@
           <span>Clients</span></a>
       </li>
 
+        <!-- Nav Item - Abonnements Collapse Menu -->
+        <li class="nav-item {{ Request::is('admin/abonnements') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSubscriptions" aria-expanded="true" aria-controls="collapseSubscriptions">
+            <i class="fas fa-certificate"></i>
+            <span>Abonnements</span>
+        </a>
+        <div id="collapseSubscriptions" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="{{ route('admin.subscriptions') }}">
+                <i class="fas fa-tags"></i>
+                <span>Tout voir</span>
+            </a>
+            <a class="collapse-item" href="{{ route('admin.subscriptions.add') }}">
+                <i class="fas fa-plus"></i>
+                <span>Ajouter</span>
+            </a>
+            </div>
+        </div>
+        </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 

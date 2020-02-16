@@ -23,6 +23,7 @@
                     <th>Nom</th>
                     <th>Prénom</th>
                     <th>Email</th>
+                    <th>Abonnement</th>
                     <th>Crée le</th>
                 </tr>
                 </thead>
@@ -31,6 +32,7 @@
                     <th>Nom</th>
                     <th>Prénom</th>
                     <th>Email</th>
+                    <th>Abonnement</th>
                     <th>Crée le</th>
                 </tr>
                 </tfoot>
@@ -40,6 +42,7 @@
                     <td>{{ $user->lastname }}</td>
                     <td>{{ $user->firstname }}</td>
                     <td>{{ $user->email }}</td>
+                    <td>{{ $user->subscription }}</td>
                     <td>{{ $user->created_at }}</td>
                 </tr>
                 @endforeach
