@@ -8,7 +8,7 @@
 
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Clients</h1>
-        <p class="mb-4">Ici vous pouvez voir tous les utilisateurs enregistrés sur le site.<br/>Pour modifier un utilisateur vous devez simplement cliquer sur une de ses informations dans le tableau ci-dessous.</p>
+        <p class="mb-4">Ici vous pouvez voir tous les utilisateurs enregistrés sur le site.<br/>Pour modifier un utilisateur vous devez simplement cliquer sur son nom dans le tableau ci-dessous.</p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
@@ -25,6 +25,7 @@
                     <th>Email</th>
                     <th>Abonnement</th>
                     <th>Crée le</th>
+                    <th><i class="fas fa-trash-alt"></i></th>
                 </tr>
                 </thead>
                 <tfoot>
@@ -34,16 +35,18 @@
                     <th>Email</th>
                     <th>Abonnement</th>
                     <th>Crée le</th>
+                    <th><i class="fas fa-trash-alt"></i></th>
                 </tr>
                 </tfoot>
                 <tbody>
                 @foreach($users as $user)
                 <tr>
-                    <td>{{ $user->lastname }}</td>
+                    <td><a href="{{ route('admin.clients.edit', $user->id) }}">{{ $user->lastname }}</a></td>
                     <td>{{ $user->firstname }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->subscription }}</td>
                     <td>{{ $user->created_at }}</td>
+                    <td><a href="{{ route('admin.clients.delete', $user->id) }}" title="supprimer l'utilisateur">Supprimer</a></td>
                 </tr>
                 @endforeach
                 </tbody>

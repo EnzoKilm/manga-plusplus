@@ -19,7 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('subscription')->nullable();
+            $table->bigInteger('subscription_id')->nullable()->unsigned();
+            $table->foreign('subscription_id')
+                    ->references('id')
+                    ->on('subscriptions')
+                    ->onDelete('SET NULL');
             $table->string('password');
             $table->boolean('isAdmin')->default(0);
             $table->rememberToken();

@@ -102,11 +102,11 @@
         </a>
         <div id="collapseBooks" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">
+            <a class="collapse-item" href="{{ route('admin.books') }}">
                 <i class="fas fa-tags"></i>
                 <span>Tout voir</span>
             </a>
-            <a class="collapse-item" href="#">
+            <a class="collapse-item" href="{{ route('admin.books.add') }}">
                 <i class="fas fa-plus"></i>
                 <span>Ajouter</span>
             </a>
