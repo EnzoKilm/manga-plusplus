@@ -44,9 +44,23 @@ class BooksController extends Controller
     	$book->state = $request->get('state');
         $book->price = $request->get('price');
         $book->tags = $request->get('tags');
-        $book->picture_src = $request->get('picture_src');
-    	$book->save();
-    	return redirect()->route('admin.books');
+
+        if(isset(request()->image)) {
+            request()->validate([
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif',
+            ]);
+
+            $imageName = time().'.'.request()->image->getClientOriginalExtension();
+
+            request()->image->move(public_path('images'), $imageName);
+
+            $book->picture_src = '/images/'.$imageName;
+        } else {
+            $book->picture_src = '/img_preview.png';
+        }
+
+        $book->save();
+        return redirect()->route('admin.books');
     }
 
     /**
@@ -76,7 +90,18 @@ class BooksController extends Controller
     	$book->state = $request->get('state');
         $book->price = $request->get('price');
         $book->tags = $request->get('tags');
-        $book->picture_src = $request->get('picture_src');
+
+        if(isset(request()->image)) {
+            request()->validate([
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif',
+            ]);
+
+            $imageName = time().'.'.request()->image->getClientOriginalExtension();
+
+            request()->image->move(public_path('images'), $imageName);
+
+            $book->picture_src = '/images/'.$imageName;
+        }
     	$book->save();
         return redirect()->route('admin.books');
     }
@@ -91,5 +116,17 @@ class BooksController extends Controller
     	$book = Book::find($bookId);
     	$book->delete();
     	return redirect()->route('admin.books');
+    }
+
+    /**
+     * Show the desired book page in the public part of the site
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function show($bookId)
+    {
+        $book = Book::find($bookId);
+        $books = Book::all();
+    	return view('book', compact('book', 'books'));
     }
 }

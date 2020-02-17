@@ -49,8 +49,24 @@
                 <tr>
                     <td><a href="{{ route('admin.books.edit', $book->id) }}">{{ $book->name }}</a></td>
                     <td>{{ $book->type }}</td>
-                    <td>{{ $book->description }}</td>
-                    <td>{{ $book->author }}</td>
+                    <td>
+                        <?php
+                            if($book->description != null) {
+                                echo $book->description;
+                            } else {
+                                echo "Aucune";
+                            }
+                        ?>
+                    </td>
+                    <td>
+                        <?php
+                            if($book->author != null) {
+                                echo $book->author;
+                            } else {
+                                echo "Aucun";
+                            }
+                        ?>
+                    </td>
                     <td>{{ $book->availability }}</td>
                     <td>{{ $book->state }}</td>
                     <td>{{ $book->price }}</td>
@@ -63,7 +79,6 @@
                             }
                         ?>
                     </td>
-                    <td>{{ $book->picture_src }}€</td>
                     <td><a href="{{ route('admin.books.delete', $book->id) }}" title="supprimer le livre">Supprimer</a></td>
                 </tr>
                 @endforeach

@@ -18,7 +18,7 @@ class CreateBooksTable extends Migration
             $table->string('name');
             $table->enum('type', ['Manga', 'Bande dessinée']);
             $table->text('description')->nullable();
-            $table->string('author');
+            $table->string('author')->nullable();
             $table->boolean('availability')->default(1);
             $table->enum('state', ['Neuf', 'Excellent', 'Très bon', 'Bon', 'Acceptable', 'Usé'])->nullable();
             $table->float('price', 10, 2)->default(0);

@@ -8,7 +8,7 @@
 
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Ajout d'un livre</h1>
-        <form method="post" action="{{ route('admin.books.store') }}">
+        <form method="post" action="{{ route('admin.books.store') }}" enctype="multipart/form-data">
             @csrf
 
             <div class="card shadow mb-4">
@@ -98,10 +98,29 @@
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Image du livre</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Image du livre (formats acceptés : jpeg, png, jpg et gif)</h6>
+                    @if ($message = Session::get('success'))
+                        <div class="alert alert-success alert-block">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>{{ $message }}</strong>
+                        </div>
+                    @endif
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <strong>Oups!</strong> Il y a eu quelques problèmes avec votre fichier.
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
                 <div class="card-header py-3">
-                    <input type="file" class="form-control" name="picture_src">
+                    <input type="file" class="form-control" name="image" id="img_input">
+                    <div class="card-header py-3">
+                        <img id="img_preview" src="{{ URL::to('/') }}/img_preview.png" alt="preview de l'image" />
+                    </div>
                 </div>
             </div>
 
@@ -116,5 +135,23 @@
     <!-- /.container-fluid -->
 
     @include('admin/footer')
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#img_preview').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#img_input").change(function() {
+            readURL(this);
+        });
+      </script>
 
 </html>

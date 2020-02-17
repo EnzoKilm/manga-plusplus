@@ -23,6 +23,8 @@ Route::get('/profil', 'PagesController@profile')->name('public.profile');
 Route::get('/panier', 'PagesController@cart')->name('public.cart');
 Route::get('/contact', 'PagesController@contact')->name('public.contact');
 
+Route::get('/livre/{id}', 'BooksController@show')->name('public.books');
+
 Auth::routes(['verify' => true]);
 
 Route::get('/admin', 'AdminController@index')->name('admin.index');
@@ -44,6 +46,3 @@ Route::post('/admin/livres/store', 'BooksController@store')->name('admin.books.s
 Route::get('/admin/livres/{id}/modifier', 'BooksController@edit')->name('admin.books.edit');
 Route::post('/admin/livres/{id}/update', 'BooksController@update')->name('admin.books.update');
 Route::get('/admin/livres/{id}/delete', 'BooksController@delete')->name('admin.books.delete');
-
-Route::get('/admin/livres/image-upload', 'ImageUploadController@imageUpload')->name('admin.books.image.upload');
-Route::post('/admin/livres/image-upload', 'ImageUploadController@imageUploadPost')->name('admin.books.image.upload.post');
