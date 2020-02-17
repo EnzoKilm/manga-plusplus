@@ -44,7 +44,13 @@
                     <td><a href="{{ route('admin.clients.edit', $user->id) }}">{{ $user->lastname }}</a></td>
                     <td>{{ $user->firstname }}</td>
                     <td>{{ $user->email }}</td>
-                    <td>{{ $user->subscription }}</td>
+                    <?php
+                        if(!isset($user->subscriptions->id)) {
+                            echo '<td>Aucun</td>';
+                        } else {
+                            echo '<td>'.$user->subscriptions->name.'</td>';
+                        }
+                    ?>
                     <td>{{ $user->created_at }}</td>
                     <td><a href="{{ route('admin.clients.delete', $user->id) }}" title="supprimer l'utilisateur">Supprimer</a></td>
                 </tr>

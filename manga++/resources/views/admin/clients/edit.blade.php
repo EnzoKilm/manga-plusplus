@@ -43,10 +43,13 @@
                     <h6 class="m-0 font-weight-bold text-primary">Abonnement de l'utilisateur</h6>
                 </div>
                 <div class="card-body">
-                    <select name="subscription_id" size="1">
-                        <option value="None" selected="selected">Aucun</option>';
+                    <select name="subscription_id" size="1"><option value="0" selected="selected">Aucun</option>
                         @foreach($subscriptions as $subscription)
+                            @if ($user->subscription_id === $subscription->id)
+                                <option value="{{ $subscription->id }}" selected="selected">{{ $subscription->name }}</option>
+                            @else
                             <option value="{{ $subscription->id }}">{{ $subscription->name }}</option>
+                            @endif
                         @endforeach
                     </select>
                 </div>

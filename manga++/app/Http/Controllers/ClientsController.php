@@ -41,7 +41,7 @@ class ClientsController extends Controller
     	$user = User::find($userId);
     	$user->firstname = $request->get('firstname');
     	$user->lastname = $request->get('lastname');
-    	$user->subscription_id = $request->get('subscription_id');
+        $user->subscription_id = $request->get('subscription_id');
     	$user->save();
         return redirect()->route('admin.clients');
     }
