@@ -22,8 +22,10 @@ Auth::routes();
 Route::get('/profil', 'PagesController@profile')->name('public.profile');
 Route::get('/panier', 'PagesController@cart')->name('public.cart');
 Route::get('/contact', 'PagesController@contact')->name('public.contact');
+Route::post('/recherche', 'PagesController@search')->name('public.search');
 
 Route::get('/livre/{id}', 'BooksController@show')->name('public.books');
+
 
 Auth::routes(['verify' => true]);
 
