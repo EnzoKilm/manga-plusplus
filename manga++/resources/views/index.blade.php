@@ -176,113 +176,55 @@
 
                             <div class="tab-content">
                                 <div class="tab-pane fade active in" id="mangas" >
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/naruto_cover.png" alt="" />
-                                                    <h2>56€</h2>
-                                                    <p>Naruto, Tome 63</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
+                                    @php
+                                        $books = App\Book::orderBy('type', 'desc')
+                                            ->where('type', '=', 'Manga')
+                                            ->take(4)
+                                            ->get();
+                                    @endphp
+                                    @foreach ($books as $book)
+                                        <div class="col-sm-3">
+                                            <div class="product-image-wrapper">
+                                                <div class="single-products">
+                                                    <div class="productinfo category-img text-center">
+                                                        <a href="{{ route('public.books', $book->id) }}">
+                                                            <img src="{{ URL::to('/') }}{{ $book->picture_src }}" alt="{{ $book->name }}" />
+                                                            <h2>{{ $book->price }}€</h2>
+                                                            <p>{{ $book->name }}</p>
+                                                        </a>
+                                                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                                    </div>
 
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/naruto_cover.png" alt="" />
-                                                    <h2>56€</h2>
-                                                    <p>Naruto, Tome 63</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/naruto_cover.png" alt="" />
-                                                    <h2>56€</h2>
-                                                    <p>Naruto, Tome 63</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/naruto_cover.png" alt="" />
-                                                    <h2>56€</h2>
-                                                    <p>Naruto, Tome 63</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
 
                                 <div class="tab-pane fade" id="bd" >
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/titeuf_cover.jpg" alt="Titeuf" />
-                                                    <h2>56€</h2>
-                                                    <p>Titeuf, Tome 3 : Ça épate les filles</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
+                                    @php
+                                        $books = App\Book::orderBy('type', 'desc')
+                                            ->where('type', '=', 'Bande dessinée')
+                                            ->take(4)
+                                            ->get();
+                                    @endphp
+                                    @foreach ($books as $book)
+                                        <div class="col-sm-3">
+                                            <div class="product-image-wrapper">
+                                                <div class="single-products">
+                                                    <div class="productinfo category-img text-center">
+                                                        <a href="{{ route('public.books', $book->id) }}">
+                                                            <img src="{{ URL::to('/') }}{{ $book->picture_src }}" alt="{{ $book->name }}" />
+                                                            <h2>{{ $book->price }}€</h2>
+                                                            <p>{{ $book->name }}</p>
+                                                        </a>
+                                                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                                    </div>
 
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/titeuf_cover.jpg" alt="Titeuf" />
-                                                    <h2>56€</h2>
-                                                    <p>Titeuf, Tome 3 : Ça épate les filles</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/titeuf_cover.jpg" alt="Titeuf" />
-                                                    <h2>56€</h2>
-                                                    <p>Titeuf, Tome 3 : Ça épate les filles</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <div class="product-image-wrapper">
-                                            <div class="single-products">
-                                                <div class="productinfo category-img text-center">
-                                                    <img src="public_site/images/home/titeuf_cover.jpg" alt="Titeuf" />
-                                                    <h2>56€</h2>
-                                                    <p>Titeuf, Tome 3 : Ça épate les filles</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div><!--/category-tab-->
