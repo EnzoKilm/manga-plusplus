@@ -20,41 +20,56 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                 <tr>
-                    <th>ID du livre</th>
                     <th>Date de mouvement</th>
                     <th>Sens</th>
+                    <th>Livre</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
-                    <th>ID du livre</th>
                     <th>Date de mouvement</th>
                     <th>Sens</th>
+                    <th>Livre</th>
                 </tr>
                 </tfoot>
                 <tbody>
                 @foreach($locations as $location)
                 <tr>
-                    <td>{{ $location->book->id }}</a></td>
-
                     <?php
-                        $currentDate = Carbon\Carbon::now();
-                        echo '<td>'.$currentDate.'</td>';
-                        $diff = $currentDate->diffInDays($location->date_retrait);
+                        $date = Carbon\Carbon::now();
+                        $retrait = new Carbon\Carbon($location->date_retrait);
+                        $retour = new Carbon\Carbon($location->date_max);
+
+                        $diff_retour = $retour->diffInDays($date);
+                        $diff_jours = $retrait->diffInDays($date);
+
+                        $days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+                        $jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+                        $mois = ['janvier', 'févrirer', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+                        $months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+                        if($diff_jours < 7) {
+                            $dayPos = array_search($retrait->format('D'),$days);
+                            $date = $jours[$dayPos].' '.$retrait->day.' ';
+                            $monthPos = array_search($retrait->format('F'),$months);
+                            $date .= $mois[$monthPos].' '.$retrait->year;
+
+                            echo '<td>'.$date.'</td>';
+                            echo '<td><i class="fas fa-long-arrow-alt-left" style="color: red;"></i></td>';
+                        } else {
+                            $dayPos = array_search($retour->format('D'),$days);
+                            $date = $jours[$dayPos].' '.$retour->day.' ';
+                            $monthPos = array_search($retour->format('F'),$months);
+                            $date .= $mois[$monthPos].' '.$retour->year;
+
+                            echo '<td>'.$date.'</td>';
+                            echo '<td><i class="fas fa-long-arrow-alt-right" style="color: green;"></i></td>';
+                        }
                     ?>
-
-                    <td>{{ $diff }}</td>
-
-                    {{-- <td>{{ $location->date_retrait }}</td>
-                    <td>{{ $location->date_max }}</td> --}}
-
-                    {{-- <td>
-                        @if ($location->retiree == 0)
-                            <a href="{{ route('admin.locations.validation', $location->id) }}" style="color: red;">Non</a>
-                        @else
-                            <a href="{{ route('admin.locations.annulation', $location->id) }}" style="color: green;">Oui</a>
-                        @endif
-                    </td> --}}
+                    <td>
+                        <p>{{ $location->book->name }}</p>
+                        <p class="float:right;">ID# {{ $location->book->id }}</p>
+                    </td>
                 </tr>
                 @endforeach
                 </tbody>

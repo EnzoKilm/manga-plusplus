@@ -4,6 +4,9 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Book;
+use App\Location;
+use Carbon\Carbon;
 
 class Kernel extends ConsoleKernel
 {
@@ -24,8 +27,20 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        $schedule->command('inspire')
+                 ->hourly();
+
+        $schedule->call(function () {
+            $books = Book::all();
+            foreach($books as $book) {
+                $location = Location::find($book->id);
+                $diff_retrait = new Carbon($location->date_retrait);
+                if($diff_retrait->diffInDays(Carbon::now()) < 7) {
+                    $book->availability = true;
+                    $book->save();
+                }
+            }
+        })->hourly();
     }
 
     /**
