@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class Subscription extends Model
 {
@@ -16,4 +17,9 @@ class Subscription extends Model
         "discount_type",
         "price"
     ];
+
+    public function user()
+    {
+    	return $this->hasMany(User::class);
+    }
 }

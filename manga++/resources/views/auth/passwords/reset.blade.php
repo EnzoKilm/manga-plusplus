@@ -28,8 +28,8 @@
                                     <div class="col-lg-6">
                                         <div class="p-5">
                                             <div class="text-center">
-                                                <h1 class="h4 text-gray-900 mb-2">Mot de passe oublié?</h1>
-                                                <p class="mb-4">Pas de soucis, ça arrive. Entre juste ton email en dessous et nous t'enverrons un lien pour réinitialiser ton mot de passe!</p>
+                                                <h1 class="h4 text-gray-900 mb-2">Réinitialisation du mot de passe</h1>
+                                                <p class="mb-4">Entrez l'e-mail de votre compte ainsi que votre nouveau mot de passe :</p>
                                             </div>
                                             <form class="user" method="POST" action="{{ route('password.update') }}">
                                                 @csrf
@@ -37,7 +37,7 @@
                                                 <input type="hidden" name="token" value="{{ $token }}">
 
                                                 <div class="form-group">
-                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                                                    <input id="exampleInputEmail" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
 
                                                     @error('email')
                                                         <span class="invalid-feedback" role="alert">
@@ -60,9 +60,11 @@
                                                     </div>
                                                 </div>
 
-                                                <button type="submit" class="btn btn-primary btn-user btn-block">
-                                                    {{ __('Réinitialiser le mot de passe') }}
-                                                </button>
+                                                <div class="form-group" style="margin-top:50px;">
+                                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                                        {{ __('Réinitialiser le mot de passe') }}
+                                                    </button>
+                                                </div>
                                             </form>
                                             <hr>
                                             <div class="text-center">

@@ -27,15 +27,4 @@ class AdminController extends Controller
         $userCount = User::count();
         return view('admin/index', compact('userCount'));
     }
-
-    /**
-     * Show the clients page.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function clients()
-    {
-        $users = User::all();
-        return view('admin/clients', compact('users'));
-    }
 }

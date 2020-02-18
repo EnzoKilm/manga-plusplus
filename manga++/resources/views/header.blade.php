@@ -38,7 +38,12 @@
 							<a href="{{ url('/') }}"><img src="{{ URL::to('/') }}/public_site/images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="search_box pull-right">
-							<input type="text" placeholder="Rechercher"/>
+                            <form method="post" action="{{ route('public.search') }}">
+                                @csrf
+
+                                <input type="text" name="search" placeholder="Rechercher"/>
+                                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                            </form>
 						</div>
 					</div>
 					<div class="col-md-8 clearfix header-right">

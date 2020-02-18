@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template-->
   <link href="{{ URL::to('/') }}/admin_site/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="{{ URL::to('/') }}/admin_site/css/style.css" rel="stylesheet">
 
   <!-- Custom styles for this page -->
   <link href="{{ URL::to('/') }}/admin_site/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -55,7 +56,7 @@
       </div>
 
       <!-- Nav Item - Mouvements Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item  {{ Request::is('admin/mouvements') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-exchange-alt"></i>
           <span>Mouvements</span>
@@ -75,7 +76,7 @@
       </li>
 
       <!-- Nav Item - Locations Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item  {{ Request::is('admin/locations') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-shopping-cart"></i>
             <span>Locations</span>
@@ -95,23 +96,23 @@
       </li>
 
         <!-- Nav Item - Books Collapse Menu -->
-        <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBooks" aria-expanded="true" aria-controls="collapseBooks">
-            <i class="fas fa-book-open"></i>
-            <span>Livres</span>
-        </a>
-        <div id="collapseBooks" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">
-                <i class="fas fa-tags"></i>
-                <span>Tout voir</span>
+        <li class="nav-item {{ Request::is('admin/livres*') ? 'active' : '' }}">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBooks" aria-expanded="true" aria-controls="collapseBooks">
+                <i class="fas fa-book-open"></i>
+                <span>Livres</span>
             </a>
-            <a class="collapse-item" href="#">
-                <i class="fas fa-plus"></i>
-                <span>Ajouter</span>
-            </a>
+            <div id="collapseBooks" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ route('admin.books') }}">
+                    <i class="fas fa-tags"></i>
+                    <span>Tout voir</span>
+                </a>
+                <a class="collapse-item" href="{{ route('admin.books.add') }}">
+                    <i class="fas fa-plus"></i>
+                    <span>Ajouter</span>
+                </a>
+                </div>
             </div>
-        </div>
         </li>
 
       <!-- Divider -->
@@ -130,7 +131,7 @@
       </li>
 
         <!-- Nav Item - Abonnements Collapse Menu -->
-        <li class="nav-item {{ Request::is('admin/abonnements') ? 'active' : '' }}">
+        <li class="nav-item {{ Request::is('admin/abonnements*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSubscriptions" aria-expanded="true" aria-controls="collapseSubscriptions">
             <i class="fas fa-certificate"></i>
             <span>Abonnements</span>
