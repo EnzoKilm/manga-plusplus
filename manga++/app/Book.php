@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Location;
 
 class Book extends Model
 {
@@ -18,4 +19,9 @@ class Book extends Model
         "tags",
         "picture_src"
     ];
+
+    public function location()
+    {
+    	return $this->hasMany(Location::class);
+    }
 }

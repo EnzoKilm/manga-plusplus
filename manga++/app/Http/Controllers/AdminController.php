@@ -25,7 +25,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        if(auth()->id() == 2) {
+        if(auth()->id() == env('ADMIN_ID')) {
             $userCount = User::count();
             $bookCount = Book::count();
             return view('admin/index', compact('userCount', 'bookCount'));

@@ -14,19 +14,21 @@ class CreateLocationsTable extends Migration
     public function up()
     {
         Schema::create('locations', function (Blueprint $table) {
+            $table->engine='InnoDB';
             $table->bigIncrements('id');
-            $table->bigInteger('book_id')->nullable()->unsigned();
+            $table->bigInteger('book_id')->unsigned();
             $table->foreign('book_id')
                     ->references('id')
-                    ->on('books')
+                    ->on('book')
                     ->onDelete('SET NULL');
-            $table->bigInteger('user_id')->nullable()->unsigned();
+            $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')
                     ->references('id')
-                    ->on('users')
+                    ->on('user')
                     ->onDelete('SET NULL');
             $table->timestamp('date_retrait');
             $table->timestamp('date_max');
+            $table->boolean('retiree')->default(0);
             $table->timestamps();
         });
     }

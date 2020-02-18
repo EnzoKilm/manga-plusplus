@@ -51,7 +51,7 @@
 							<ul class="nav navbar-nav">
                                 @if (Route::has('login'))
                                     @auth
-                                        @if (Auth::user()->id == 2)
+                                        @if (Auth::user()->id == env('ADMIN_ID'))
                                             <li><a href="{{ url('/admin') }}"><i class="fas fa-tools"></i> Administration</a></li>
                                         @endif
                                         <li><a href="{{ url('/profil') }}"><i class="fa fa-user"></i> Profil</a></li>

@@ -14,6 +14,7 @@ class CreateSubscriptionsTable extends Migration
     public function up()
     {
         Schema::create('subscriptions', function (Blueprint $table) {
+            $table->engine='InnoDB';
             $table->bigIncrements('id');
             $table->string('name');
             $table->enum('periodicity', ['Mois', 'Année']);

@@ -54,3 +54,6 @@ Route::post('/admin/livres/store', 'BooksController@store')->name('admin.books.s
 Route::get('/admin/livres/{id}/modifier', 'BooksController@edit')->name('admin.books.edit')->middleware('adminmiddleware');
 Route::post('/admin/livres/{id}/update', 'BooksController@update')->name('admin.books.update')->middleware('adminmiddleware');
 Route::get('/admin/livres/{id}/delete', 'BooksController@delete')->name('admin.books.delete')->middleware('adminmiddleware');
+
+Route::get('/admin/locations/retraits', 'LocationsController@retraits')->name('admin.locations.retraits')->middleware('adminmiddleware');
+Route::get('/admin/locations/emprunts', 'LocationsController@emprunts')->name('admin.locations.emprunts')->middleware('adminmiddleware');
