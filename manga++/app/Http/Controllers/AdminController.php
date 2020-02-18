@@ -25,8 +25,12 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $userCount = User::count();
-        $bookCount = Book::count();
-        return view('admin/index', compact('userCount', 'bookCount'));
+        if(auth()->id() == 2) {
+            $userCount = User::count();
+            $bookCount = Book::count();
+            return view('admin/index', compact('userCount', 'bookCount'));
+        } else {
+            return view('index');
+        }
     }
 }
