@@ -22,7 +22,7 @@
                                                 <h2>{{ $results[$i]->price }}€</h2>
                                                 <p>{{ $results[$i]->name }}</p>
                                             </a>
-                                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                            <a href="{{ route('public.cart.add', $results[$i]->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
                                         </div>
                                         <div class="product-overlay">
                                             <div class="overlay-content">
@@ -30,7 +30,7 @@
                                                     <h2>{{ $results[$i]->price }}€</h2>
                                                     <p>{{ $results[$i]->name }}</p>
                                                 </a>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                                <a href="{{ route('public.cart.add', $results[$i]->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
                                             </div>
                                         </div>
                                     </div>

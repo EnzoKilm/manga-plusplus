@@ -136,7 +136,7 @@
                                                                 <h2>{{ $single_book->price }}€</h2>
                                                                 <p>{{ $single_book->name }}</p>
                                                             </a>
-                                                            <a href="#" class="btn btn-default add-to-cart">
+                                                            <a href="{{ route('public.cart.add', $single_book->id) }}" class="btn btn-default add-to-cart">
                                                                 <i class="fa fa-shopping-cart"></i>Ajouter au panier
                                                             </a>
                                                         </div>

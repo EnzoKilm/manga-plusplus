@@ -21,6 +21,9 @@ Auth::routes();
 
 Route::get('/profil', 'PagesController@profile')->name('public.profile');
 Route::get('/panier', 'PagesController@cart')->name('public.cart');
+Route::get('/panier/ajouter/{id}', 'PagesController@cartAdd')->name('public.cart.add');
+Route::get('/panier/remove/{id}', 'PagesController@cartRemove')->name('public.cart.remove');
+Route::get('/panier/reserver/', 'PagesController@cartBuy')->name('public.cart.buy');
 Route::get('/contact', 'PagesController@contact')->name('public.contact');
 Route::post('/recherche', 'PagesController@search')->name('public.search');
 

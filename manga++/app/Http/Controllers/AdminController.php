@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Book;
 
 class AdminController extends Controller
 {
@@ -25,6 +26,7 @@ class AdminController extends Controller
     public function index()
     {
         $userCount = User::count();
-        return view('admin/index', compact('userCount'));
+        $bookCount = Book::count();
+        return view('admin/index', compact('userCount', 'bookCount'));
     }
 }

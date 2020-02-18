@@ -2,7 +2,7 @@
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; 2020 Manga++. All rights reserved.</span>
+            <span>Copyright &copy; 2020 Manga++. Tous droits réservés.</span>
           </div>
         </div>
       </footer>
