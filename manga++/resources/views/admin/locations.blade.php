@@ -44,13 +44,11 @@
                     <td>{{ $location->date_retrait }}</td>
                     <td>{{ $location->date_max }}</td>
                     <td>
-                        <?php
-                            if($location->retiree == 0) {
-                                echo '<a href="#">Non</a>';
-                            } else {
-                                echo '<a href="#">Oui</a>';
-                            }
-                        ?>
+                        @if ($location->retiree == 0)
+                            <a href="{{ route('admin.locations.validation', $location->id) }}" style="color: red;">Non</a>
+                        @else
+                            <a href="{{ route('admin.locations.annulation', $location->id) }}" style="color: green;">Oui</a>
+                        @endif
                     </td>
                 </tr>
                 @endforeach

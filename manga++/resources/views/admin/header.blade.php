@@ -75,24 +75,11 @@
         </div>
       </li>
 
-      <!-- Nav Item - Locations Collapse Menu -->
-      <li class="nav-item  {{ Request::is('admin/locations*') ? 'active' : '' }}">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-shopping-cart"></i>
-            <span>Locations</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="{{ route('admin.locations.retraits') }}">
-                <i class="fas fa-cart-arrow-down"></i>
-                <span>Retraits</span>
-            </a>
-            <a class="collapse-item" href="#">
-                <i class="fas fa-cart-arrow-down"></i>
-                <span>Eprunts</span>
-            </a>
-          </div>
-        </div>
+      <!-- Nav Item - Locations -->
+      <li class="nav-item {{ Request::is('admin/locations') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.locations') }}">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Locations</span></a>
       </li>
 
         <!-- Nav Item - Books Collapse Menu -->
