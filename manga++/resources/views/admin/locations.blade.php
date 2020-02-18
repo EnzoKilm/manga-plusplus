@@ -25,6 +25,7 @@
                     <th>Date de retrait</th>
                     <th>Date de retour maximum</th>
                     <th>Commande retirée</th>
+                    <th>Commande ramenée</th>
                 </tr>
                 </thead>
                 <tfoot>
@@ -34,6 +35,7 @@
                     <th>Date de retrait</th>
                     <th>Date de retour maximum</th>
                     <th>Commande retirée</th>
+                    <th>Commande ramenée</th>
                 </tr>
                 </tfoot>
                 <tbody>
@@ -45,9 +47,16 @@
                     <td>{{ $location->date_max }}</td>
                     <td>
                         @if ($location->retiree == 0)
-                            <a href="{{ route('admin.locations.validation', $location->id) }}" style="color: red;">Non</a>
+                            <a href="{{ route('admin.locations.retiree.validation', $location->id) }}" style="color: red;">Non</a>
                         @else
-                            <a href="{{ route('admin.locations.annulation', $location->id) }}" style="color: green;">Oui</a>
+                            <a href="{{ route('admin.locations.retiree.annulation', $location->id) }}" style="color: green;">Oui</a>
+                        @endif
+                    </td>
+                    <td>
+                        @if ($location->ramenee == 0)
+                            <a href="{{ route('admin.locations.ramenee.validation', $location->id) }}" style="color: red;">Non</a>
+                        @else
+                            <a href="{{ route('admin.locations.ramenee.annulation', $location->id) }}" style="color: green;">Oui</a>
                         @endif
                     </td>
                 </tr>

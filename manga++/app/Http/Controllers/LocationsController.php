@@ -23,7 +23,7 @@ class LocationsController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function validation($locationId)
+    public function retireeValidation($locationId)
     {
         $location = Location::find($locationId);
         $location->retiree = true;
@@ -36,10 +36,36 @@ class LocationsController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function annulation($locationId)
+    public function retireeAnnulation($locationId)
     {
         $location = Location::find($locationId);
         $location->retiree = false;
+        $location->save();
+        return back();
+    }
+
+    /**
+     * Set the location returnment state on true
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function rameneeValidation($locationId)
+    {
+        $location = Location::find($locationId);
+        $location->ramenee = true;
+        $location->save();
+        return back();
+    }
+
+    /**
+     * Set the location returnment state on false
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function rameneeAnnulation($locationId)
+    {
+        $location = Location::find($locationId);
+        $location->ramenee = false;
         $location->save();
         return back();
     }

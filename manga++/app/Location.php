@@ -5,6 +5,9 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\User;
 use App\Book;
+use App\Notifications\BookReturnNotification;
+use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Notification;
 
 class Location extends Model
 {
@@ -24,5 +27,16 @@ class Location extends Model
     public function user()
     {
     	return $this->belongsTo(User::class, 'user_id');
+    }
+
+    /**
+     * Send the book return notification
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendBookReturnNotification()
+    {
+        $this->notify(new BookReturnNotification());
     }
 }

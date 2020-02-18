@@ -56,7 +56,9 @@ Route::post('/admin/livres/{id}/update', 'BooksController@update')->name('admin.
 Route::get('/admin/livres/{id}/delete', 'BooksController@delete')->name('admin.books.delete')->middleware('adminmiddleware');
 
 Route::get('/admin/locations', 'LocationsController@index')->name('admin.locations')->middleware('adminmiddleware');
-Route::get('/admin/locations/validation/{id}', 'LocationsController@validation')->name('admin.locations.validation')->middleware('adminmiddleware');
-Route::get('/admin/locations/annulation/{id}', 'LocationsController@annulation')->name('admin.locations.annulation')->middleware('adminmiddleware');
+Route::get('/admin/locations/validation/retiree/{id}', 'LocationsController@retireeValidation')->name('admin.locations.retiree.validation')->middleware('adminmiddleware');
+Route::get('/admin/locations/annulation/retiree/{id}', 'LocationsController@retireeAnnulation')->name('admin.locations.retiree.annulation')->middleware('adminmiddleware');
+Route::get('/admin/locations/validation/ramenee/{id}', 'LocationsController@rameneeValidation')->name('admin.locations.ramenee.validation')->middleware('adminmiddleware');
+Route::get('/admin/locations/annulation/ramenee/{id}', 'LocationsController@rameneeAnnulation')->name('admin.locations.ramenee.annulation')->middleware('adminmiddleware');
 
 Route::get('/admin/mouvements', 'MouvementsController@index')->name('admin.mouvements')->middleware('adminmiddleware');

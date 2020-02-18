@@ -48,7 +48,7 @@
                         $mois = ['janvier', 'févrirer', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
                         $months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-                        if($diff_jours < 7) {
+                        if($location->ramenee != true) {
                             $dayPos = array_search($retrait->format('D'),$days);
                             $date = $jours[$dayPos].' '.$retrait->day.' ';
                             $monthPos = array_search($retrait->format('F'),$months);

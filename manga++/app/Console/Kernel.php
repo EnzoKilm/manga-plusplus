@@ -41,6 +41,20 @@ class Kernel extends ConsoleKernel
                 }
             }
         })->hourly();
+
+        $schedule->call(function () {
+            $locations = Location::all();
+            foreach($locations as $location) {
+                if($location->ramenee != true) {
+                    $retour_max = new Carbon($location->date_max);
+                    $temps_passe_max = \Carbon\Carbon::createFromTimestampUTC($retour_max)->diffInSeconds();
+                    $temps_passe_actuel = \Carbon\Carbon::createFromTimestampUTC(Carbon::now()->addDays(2))->diffInSeconds();
+                    if($temps_passe_max - $temps_passe_actuel < 0) {
+                        Location::sendBookReturnNotification();
+                    }
+                }
+            }
+        })->hourly();
     }
 
     /**

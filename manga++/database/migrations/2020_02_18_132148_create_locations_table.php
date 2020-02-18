@@ -29,6 +29,7 @@ class CreateLocationsTable extends Migration
             $table->timestamp('date_retrait');
             $table->timestamp('date_max');
             $table->boolean('retiree')->default(0);
+            $table->boolean('ramenee')->default(0);
             $table->timestamps();
         });
     }
