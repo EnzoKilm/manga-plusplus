@@ -1,0 +1,43 @@
+source image
+
+bleach :
+
+pinterest.se
+mangagate.com
+pinterest.se
+senscritique.com
+
+blackclover :
+
+originalcomics.fr
+senscritique.com
+livraddict.com
+amazon.fr
+
+dbz :
+
+senscritique.com
+mangagate.com
+bdnet.com
+senscritique.com
+
+my hero academia :
+
+bedetheque.com
+senscritique.com
+bedetheque.com
+scenario.com
+
+naruto :
+
+manga-news.com
+naruto-1202.skyrock.com
+bdfugue.com
+franchescoli51.skyrock.com
+
+one piece :
+
+sites.google.com
+printerest.com
+senscritique.com
+portgasdace-luffy.skyrrock.com
