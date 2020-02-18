@@ -83,13 +83,13 @@ class PagesController extends Controller
             $location = new Location();
             $location->book_id = $item->id;
             $location->user_id = auth()->id();
-            $currentDate = Carbon::now();
-            $currentDate->addDays(1);
-            $location->date_retrait = $currentDate;
-            $endDate = $currentDate->addDays(7);
-            $endDate->setTime(12, 0, 0);
-            $location->date_max = $endDate;
+            $location->date_retrait = Carbon::now()->addDays(1)->setTime(12, 0, 0);
+            $location->date_max = Carbon::now()->addDays(8)->setTime(12, 0, 0);
             $location->save();
+
+            $book = Book::find($item->id);
+            $book->availability = false;
+            $book->save();
         }
 
         Session::forget('cart');

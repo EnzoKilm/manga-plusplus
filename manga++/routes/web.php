@@ -30,7 +30,6 @@ Route::post('/recherche', 'PagesController@search')->name('public.search');
 
 Route::get('/livre/{id}', 'BooksController@show')->name('public.books');
 
-
 Auth::routes(['verify' => true]);
 
 Route::get('/admin', 'AdminController@index')->name('admin.index');

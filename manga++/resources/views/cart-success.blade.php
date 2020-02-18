@@ -10,7 +10,8 @@
                     <li class="active">Profil</li>
                     </ol>
                 </div>
-                <h1>Succès de la location</h1><br/>
+                <h1>Succès de la location</h1>
+                <p>Vous pouvez venir retirer votre commande dès demain à 12h00.<br/>
             </div>
         </section>
 
