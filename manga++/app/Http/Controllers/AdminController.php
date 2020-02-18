@@ -28,7 +28,9 @@ class AdminController extends Controller
         if(auth()->id() == env('ADMIN_ID')) {
             $userCount = User::count();
             $bookCount = Book::count();
-            return view('admin/index', compact('userCount', 'bookCount'));
+            $mangaCount = Book::where('type','=','Manga')->count();
+            $cartoonCount = Book::where('type','=','Bande dessinée')->count();
+            return view('admin/index', compact('userCount', 'bookCount', 'mangaCount', 'cartoonCount'));
         } else {
             return view('index');
         }
