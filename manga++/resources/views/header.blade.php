@@ -51,6 +51,9 @@
 							<ul class="nav navbar-nav">
                                 @if (Route::has('login'))
                                     @auth
+                                        @if (Auth::user()->id == 2)
+                                            <li><a href="{{ url('/admin') }}"><i class="fas fa-tools"></i> Administration</a></li>
+                                        @endif
                                         <li><a href="{{ url('/profil') }}"><i class="fa fa-user"></i> Profil</a></li>
                                         <li><a href="{{ url('/panier') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
                                         <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>

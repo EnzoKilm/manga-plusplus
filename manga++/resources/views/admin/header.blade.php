@@ -150,6 +150,16 @@
         </div>
         </li>
 
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Home page -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ URL::to('/') }}">
+            <i class="fas fa-fw fa-home"></i>
+            <span>Accueil du site</span></a>
+        </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
