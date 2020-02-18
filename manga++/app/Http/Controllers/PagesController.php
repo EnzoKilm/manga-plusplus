@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Book;
+use App\Location;
+use Carbon\Carbon;
 
 class PagesController extends Controller
 {
@@ -75,9 +78,33 @@ class PagesController extends Controller
      */
     public function cartBuy(Request $request)
     {
-        Session::forget('cart');
+        $cart = Session::get('cart');
+        foreach($cart as $item) {
+            $location = new Location();
+            $location->book_id = $item->id;
+            $location->user_id = auth()->id();
+            $currentDate = Carbon::now();
+            $currentDate->addDays(1);
+            $location->date_retrait = $currentDate;
+            $endDate = $currentDate->addDays(7);
+            $endDate->setTime(12, 0, 0);
+            $location->date_max = $endDate;
+            $location->save();
+        }
 
-        return redirect()->route('public.cart');
+        Session::forget('cart');
+        return redirect()->route('public.cart.success');
+    }
+
+    /**
+     * Show the success location page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function success()
+    {
+        $title = 'Succès de la location';
+        return view('cart-success',compact('title'));
     }
 
     /**

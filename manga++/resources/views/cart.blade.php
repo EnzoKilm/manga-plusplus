@@ -22,8 +22,14 @@
                         </thead>
                         <tbody>
                             {{-- {{ var_dump($cart) }} --}}
+                            @php
+                                $total_price = 0;
+                            @endphp
                             @foreach ($cart as $item)
                                 @if (isset($item->id))
+                                    @php
+                                        $total_price+=$item->price;
+                                    @endphp
                                     <tr>
                                         <td class="cart_product">
                                             <a href="{{ route('public.books', $item->id) }}"><img src="{{ URL::to('/') }}{{ $item->picture_src }}" alt="{{ $item->name }}"></a>
@@ -43,7 +49,10 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <a href="{{ route('public.cart.buy') }}">Acheter</a>
+                    <div class="cart_buy">
+                        <a href="{{ route('public.cart.buy') }}">Louer</a>
+                        <p>Total: {{ $total_price }}€</p>
+                    </div>
                 </div>
             </div>
         </section> <!--/#cart_items-->

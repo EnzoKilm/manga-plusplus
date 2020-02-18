@@ -96,14 +96,12 @@
                                     <!-- <img src="images/product-details/new.jpg" class="newarrival" alt="" /> -->
                                     <h2>{{ $book->name }}</h2>
                                     <p>ID: {{ $book->id }}</p>
+                                    <p>Durée de la location : 7 jours</p>
                                     <!-- <img src="images/product-details/rating.png" alt="" /> -->
                                     <span>
                                         <span>{{ $book->price }}€</span>
-                                        <label>Quantité:</label>
-                                        <input type="text" value="1" />
                                         <button type="button" class="btn btn-fefault cart">
-                                            <i class="fa fa-shopping-cart"></i>
-                                            Ajouter au panier
+                                            <a class="none-button" href="{{ route('public.cart.add', $book->id) }}"><i class="fa fa-shopping-cart"></i> Ajouter au panier</a>
                                         </button>
                                     </span>
                                     <p><b>Disponibilité:</b>

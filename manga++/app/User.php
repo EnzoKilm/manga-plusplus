@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Notifications\MailResetPasswordNotification;
 use App\Subscription;
+use App\Location;
 
 class User extends Authenticatable
 {
@@ -58,5 +59,10 @@ class User extends Authenticatable
     public function subscriptions()
     {
     	return $this->belongsTo(Subscription::class, 'subscription_id');
+    }
+
+    public function location()
+    {
+    	return $this->hasMany(Location::class);
     }
 }

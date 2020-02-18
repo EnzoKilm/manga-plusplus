@@ -1596,6 +1596,7 @@ h2.title {
     border-top: 0 none;
     vertical-align: inherit;
     margin-right: 5px;
+    border-left: 1px solid #F7F7F0;
 }
 
 #cart_items .cart_info .image {
@@ -1658,20 +1659,51 @@ h2.title {
 }
 
 .cart_delete {
-    display: block;
-    margin-right: -12px;
+    margin-right: -30px;
     overflow: hidden;
 }
 
 .cart_delete a {
-    background: #F0F0E9;
+    background: #ee6d56;
     color: #FFFFFF;
-    padding: 5px 7px;
+    padding: 5px 40%;
     font-size: 16px
 }
 
 .cart_delete a:hover {
-    background: #FE980F
+    background: #ff2600;
+}
+
+.cart_buy {
+    display: block;
+    overflow: hidden;
+    border-top: 1px solid #F7F7F0;
+}
+
+.cart_buy a {
+    background: #FE980F;
+    color: #FFFFFF;
+    padding: 14px 40px;
+    font-size: 20px;
+    float: right;
+}
+
+.cart_buy a:hover,
+.cart_buy a:focus {
+    background: #fe960faf
+}
+
+.cart_buy p {
+    background: #62635f;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    font-size: 20px;
+    float: right;
+    margin: 0 5% 0 0;
+}
+
+.none-button {
+    color: #fff;
 }
 
 .bg h2.title {

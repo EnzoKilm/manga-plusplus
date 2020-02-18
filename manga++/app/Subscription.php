@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\User;
+use App\Location;
 
 class Subscription extends Model
 {
@@ -21,5 +22,10 @@ class Subscription extends Model
     public function user()
     {
     	return $this->hasMany(User::class);
+    }
+
+    public function location()
+    {
+    	return $this->hasMany(Location::class);
     }
 }
