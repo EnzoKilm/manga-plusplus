@@ -69,11 +69,12 @@
 								<div id="sportswear" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="#">One Piece </a></li>
-											<li><a href="#">Dragon Ball </a></li>
-											<li><a href="#">Death Note </a></li>
-											<li><a href="#">Fullmetal Alchemist</a></li>
-											<li><a href="#">Berserk </a></li>
+											<li><a href="#">Blackclover </a></li>
+											<li><a href="#">Bleach </a></li>
+											<li><a href="#">Dragonball </a></li>
+											<li><a href="#">My Hero Academia</a></li>
+											<li><a href="#">Naruto </a></li>
+											<li><a href="#">Onepiece </a></li>
 										</ul>
 									</div>
 								</div>
@@ -90,14 +91,12 @@
 								<div id="mens" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="#">Watchmen</a></li>
-											<li><a href="#">Calvin et Hobbes</a></li>
-											<li><a href="#">Walking Dead</a></li>
-											<li><a href="#">V pour Vendetta</a></li>
-											<li><a href="#">La Jeunesse de Picsou</a></li>
-											<li><a href="#">Gaston</a></li>
-											<li><a href="#">Killing Joke</a></li>
-											<li><a href="#">Astérix et Obélix</a></li>
+											<li><a href="#">Asterix & Obélix</a></li>
+											<li><a href="#">Boule & Bill</a></li>
+											<li><a href="#">Gaston lagaffe</a></li>
+											<li><a href="#">Les profs</a></li>
+											<li><a href="#">Tintin</a></li>
+											<li><a href="#">Titeuf</a></li>
 										</ul>
 									</div>
 								</div>
@@ -112,7 +111,7 @@
 									<li><a href="#"> <span class="pull-right">(50)</span>Astérix et Obélix</a></li>
 									<li><a href="#"> <span class="pull-right">(56)</span>Naruto</a></li>
 									<li><a href="#"> <span class="pull-right">(27)</span>Boule et Bill</a></li>
-									<li><a href="#"> <span class="pull-right">(32)</span>Hunter X Hunter</a></li>
+									<li><a href="#"> <span class="pull-right">(32)</span>Bleach</a></li>
 									<li><a href="#"> <span class="pull-right">(5)</span>Titeuf</a></li>
 								</ul>
 							</div>
@@ -140,15 +139,15 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
+										<img src="images/home/asterix1.png" alt="Asterix & Obelix" />
 										<h2>56€</h2>
-										<p>Titeuf, Tome 3 : Ça épate les filles</p>
+										<p>Asterix & Obelix, Tome 38 : La fille de Vercingetorix</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>56€</h2>
-											<p>Titeuf, Tome 3 : Ça épate les filles</p>
+											<p>Asterix & Obelix, Tome 38 : La fille de Vercingetorix</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
 									</div>
@@ -159,53 +158,15 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/naruto_cover.png" alt="Naruto" />
+										<img src="images/home/blackclover.jpg" alt="blackclover" />
 										<h2>56€</h2>
-										<p>Naruto, Tome 63</p>
+										<p>blackclover, Tome 1</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
 											<h2>56€</h2>
-											<p>Naruto, Tome 63</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
-										<h2>56€</h2>
-										<p>Titeuf, Tome 3 : Ça épate les filles</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>56€</h2>
-											<p>Titeuf, Tome 3 : Ça épate les filles</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/naruto_cover.png" alt="Naruto" />
-										<h2>56€</h2>
-										<p>Naruto, Tome 63</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>56€</h2>
-											<p>Naruto, Tome 63</p>
+											<p>blackclover, Tome 1</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
 									</div>
@@ -244,6 +205,44 @@
 										<div class="overlay-content">
 											<h2>56€</h2>
 											<p>Naruto, Tome 63</p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/profs.png" alt="Les profs" />
+										<h2>56€</h2>
+										<p>Les Profs, Tome 5 </p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>56€</h2>
+											<p>Les Profs, Tome 5 </p>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<img src="images/home/mha1.jpg" alt="My Hero Accademia" />
+										<h2>56€</h2>
+										<p>My Hero Accademia, Tome 3</p>
+										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<h2>56€</h2>
+											<p>My Hero Accademia, Tome 3</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 										</div>
 									</div>
@@ -293,9 +292,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
-												<img src="images/home/naruto_cover.png" alt="" />
+												<img src="images/home/mha1.jpg" alt="" />
 												<h2>56€</h2>
-												<p>Naruto, Tome 63</p>
+												<p>My Hero Accademia, Tome 3</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
 											
@@ -306,9 +305,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
-												<img src="images/home/naruto_cover.png" alt="" />
+												<img src="images/home/blackclover.jpg" alt="blackclover" />
 												<h2>56€</h2>
-												<p>Naruto, Tome 63</p>
+												<p>blackclover, Tome 1</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
 											
@@ -335,9 +334,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
-												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
+												<img src="images/home/profs.png" alt="Les profs" />
 												<h2>56€</h2>
-												<p>Titeuf, Tome 3 : Ça épate les filles</p>
+												<p>Les Profs, Tome 5</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
 											
@@ -348,9 +347,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
-												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
+												<img src="images/home/asterix1.png" alt="Asterix & Obelix" />
 												<h2>56€</h2>
-												<p>Titeuf, Tome 3 : Ça épate les filles</p>
+												<p>Asterix & Obelix, Tome 38 : La fille de Vercingetorix</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
 											
