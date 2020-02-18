@@ -52,11 +52,11 @@
                                 @if (Route::has('login'))
                                     @auth
                                         @if (Auth::user()->id == env('ADMIN_ID'))
-                                            <li><a href="{{ url('/admin') }}"><i class="fas fa-tools"></i> Administration</a></li>
+                                            <li><a href="{{ route('admin.index') }}"><i class="fas fa-tools"></i> Administration</a></li>
                                         @endif
-                                        <li><a href="{{ url('/profil') }}"><i class="fa fa-user"></i> Profil</a></li>
-                                        <li><a href="{{ url('/panier') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
-                                        <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
+                                        <li><a href="{{ route('public.profile') }}"><i class="fa fa-user"></i> Profil</a></li>
+                                        <li><a href="{{ route('public.cart') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
+                                        <li><a href="{{ route('public.contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
                                         <li>
                                             <a class="dropdown-item" href="#"
                                                 onclick="event.preventDefault();
@@ -69,8 +69,8 @@
                                         </li>
                                     </a>
                                     @else
-                                        <li><a href="{{ url('/panier') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
-                                        <li><a href="{{ url('/contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
+                                        <li><a href="{{ route('public.cart') }}"><i class="fa fa-shopping-cart"></i> Panier</a></li>
+                                        <li><a href="{{ route('public.contact') }}"><i class="fa fa-phone"></i> Contact</a></li>
                                         <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Connexion</a></li>
 
                                         @if (Route::has('register'))

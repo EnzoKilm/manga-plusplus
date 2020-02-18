@@ -50,7 +50,11 @@
                         </tbody>
                     </table>
                     <div class="cart_buy">
-                        <a href="{{ route('public.cart.buy') }}">Louer</a>
+                        @if (Auth::user() != null)
+                            <a href="{{ route('public.cart.buy') }}">Louer</a>
+                        @else
+                            <a href="{{ route('login') }}">Louer</a>
+                        @endif
                         <p>Total: {{ $total_price }}€</p>
                     </div>
                 </div>

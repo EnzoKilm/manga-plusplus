@@ -22,7 +22,20 @@
                                                 <h2>{{ $results[$i]->price }}€</h2>
                                                 <p>{{ $results[$i]->name }}</p>
                                             </a>
-                                            <a href="{{ route('public.cart.add', $results[$i]->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                            @php
+                                                if($results[$i]->availability == false) {
+                                                    $availability = false;
+                                                } else {
+                                                    $availability = true;
+                                                }
+                                            @endphp
+                                            @if ($availability == false)
+                                                <div style="cursor: not-allowed;">
+                                                    <a href="{{ route('public.cart.add', $results[$i]->id) }}" style="pointer-events: none;" class="btn btn-default add-to-cart"><i class="fas fa-ban"></i> Indisponible</a>
+                                                </div>
+                                            @else
+                                                <a href="{{ route('public.cart.add', $results[$i]->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i> Ajouter au panier</a>
+                                            @endif
                                         </div>
                                         <div class="product-overlay">
                                             <div class="overlay-content">
@@ -30,7 +43,20 @@
                                                     <h2>{{ $results[$i]->price }}€</h2>
                                                     <p>{{ $results[$i]->name }}</p>
                                                 </a>
-                                                <a href="{{ route('public.cart.add', $results[$i]->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                                @php
+                                                    if($results[$i]->availability == false) {
+                                                        $availability = false;
+                                                    } else {
+                                                        $availability = true;
+                                                    }
+                                                @endphp
+                                                @if ($availability == false)
+                                                    <div style="cursor: not-allowed;">
+                                                        <a href="{{ route('public.cart.add', $results[$i]->id) }}" style="pointer-events: none;" class="btn btn-default add-to-cart"><i class="fas fa-ban"></i> Indisponible</a>
+                                                    </div>
+                                                @else
+                                                    <a href="{{ route('public.cart.add', $results[$i]->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i> Ajouter au panier</a>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>

@@ -16,8 +16,10 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->id == env('ADMIN_ID')) {
-            return $next($request);
+        if(Auth::user() != null) {
+            if (Auth::user()->id == env('ADMIN_ID')) {
+                return $next($request);
+            }
         }
 
         return redirect(route('error.403'));
