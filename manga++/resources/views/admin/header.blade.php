@@ -76,7 +76,7 @@
       </li>
 
       <!-- Nav Item - Locations Collapse Menu -->
-      <li class="nav-item  {{ Request::is('admin/locations') ? 'active' : '' }}">
+      <li class="nav-item  {{ Request::is('admin/locations*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-shopping-cart"></i>
             <span>Locations</span>

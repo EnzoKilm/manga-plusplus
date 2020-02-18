@@ -16,7 +16,7 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->id == 2) {
+        if (Auth::user()->id == env('ADMIN_ID')) {
             return $next($request);
         }
 

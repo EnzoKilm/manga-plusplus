@@ -39,8 +39,8 @@
                 <tbody>
                 @foreach($locations as $location)
                 <tr>
-                    <td>{{ $location->book_id}}</a></td>
-                    <td>{{ $location->user_id }}</td>
+                    <td>{{ $location->book->name }}</a></td>
+                    <td>{{ $location->user->lastname.' '.$location->user->firstname }}</td>
                     <td>{{ $location->date_retrait }}</td>
                     <td>{{ $location->date_max }}</td>
                     <td>
