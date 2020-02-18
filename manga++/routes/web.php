@@ -58,3 +58,5 @@ Route::get('/admin/livres/{id}/delete', 'BooksController@delete')->name('admin.b
 Route::get('/admin/locations', 'LocationsController@index')->name('admin.locations')->middleware('adminmiddleware');
 Route::get('/admin/locations/validation/{id}', 'LocationsController@validation')->name('admin.locations.validation')->middleware('adminmiddleware');
 Route::get('/admin/locations/annulation/{id}', 'LocationsController@annulation')->name('admin.locations.annulation')->middleware('adminmiddleware');
+
+Route::get('/admin/mouvements', 'MouvementsController@index')->name('admin.mouvements')->middleware('adminmiddleware');

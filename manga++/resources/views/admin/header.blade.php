@@ -55,24 +55,11 @@
         Stock
       </div>
 
-      <!-- Nav Item - Mouvements Collapse Menu -->
-      <li class="nav-item  {{ Request::is('admin/mouvements') ? 'active' : '' }}">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <!-- Nav Item - Mouvements -->
+      <li class="nav-item {{ Request::is('admin/mouvements') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.mouvements') }}">
           <i class="fas fa-exchange-alt"></i>
-          <span>Mouvements</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">
-                <i class="fas fa-long-arrow-alt-right"></i>
-                <span>Entrées</span>
-            </a>
-            <a class="collapse-item" href="#">
-                <i class="fas fa-long-arrow-alt-left"></i>
-                <span>Sorties</span>
-            </a>
-          </div>
-        </div>
+          <span>Mouvements</span></a>
       </li>
 
       <!-- Nav Item - Locations -->
