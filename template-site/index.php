@@ -279,9 +279,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
-												<img src="images/home/naruto_cover.png" alt="" />
+												<img src="images/home/dbz1.jpg" alt="" />
 												<h2>56€</h2>
-												<p>Naruto, Tome 63</p>
+												<p>DrangonBall, tome 1 </p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
 											
@@ -360,9 +360,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo category-img text-center">
-												<img src="images/home/titeuf_cover.jpg" alt="Titeuf" />
+												<img src="images/home/tintin2.png" alt="Titeuf" />
 												<h2>56€</h2>
-												<p>Titeuf, Tome 3 : Ça épate les filles</p>
+												<p>Tintin, tome 3 : Tintin en Amérique</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
 											</div>
 											
