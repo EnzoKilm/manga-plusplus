@@ -142,7 +142,7 @@
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <button type="submit">Ajouter</button>
+                    <button type="submit">Mettre à jour</button>
                 </div>
             </div>
         </form>
