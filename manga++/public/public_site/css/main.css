@@ -3043,17 +3043,33 @@ textarea {
 #profile_content .profile-informations {
     display: inline-flex;
     font-size: 18px;
+    margin-left: 30px;
 }
 
 #profile_content table th, #profile_content table td{
     border: 1px solid #333333;
 }
 
-#profile_content table th {
+#profile_content .profile-center table th {
     background-color: #FE980F;
 }
 
 #profile_content table td {
     background-color: #f7f7f7;
     text-align: left;
+}
+
+#profile_content table td,
+#profile_content table th {
+    padding: 0 10px;
+}
+
+.profile-center-locations {
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+}
+
+#profile_content .profile-center-locations table th {
+    background-color: #FE980F;
 }

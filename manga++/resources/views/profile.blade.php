@@ -42,7 +42,54 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+                <div class="profile-center-locations">
+                    <div class="profile-informations">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Livre</th>
+                                    <th>Date de retrait</th>
+                                    <th>Date de retour</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if ($locations != null)
+                                    @foreach ($locations as $location)
+                                        <tr>
+                                            <td>{{ $location->book->name }}</td>
+                                            <?php
+                                                $date = Carbon\Carbon::now();
+                                                $retrait = new Carbon\Carbon($location->date_retrait);
+                                                $retour = new Carbon\Carbon($location->date_max);
 
+                                                $days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+                                                $jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+                                                $mois = ['janvier', 'févrirer', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+                                                $months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+                                                $dayPos = array_search($retrait->format('D'),$days);
+                                                $date = $jours[$dayPos].' '.$retrait->day.' ';
+                                                $monthPos = array_search($retrait->format('F'),$months);
+                                                $date .= $mois[$monthPos].' '.$retrait->year;
+                                                echo '<td>'.$date.' : 12h00</td>';
+
+                                                $dayPos = array_search($retour->format('D'),$days);
+                                                $date = $jours[$dayPos].' '.$retour->day.' ';
+                                                $monthPos = array_search($retour->format('F'),$months);
+                                                $date .= $mois[$monthPos].' '.$retour->year;
+                                                echo '<td>'.$date.' : 12h00</td>';
+                                            ?>
+                                        </tr>
+                                    @endforeach
+                                @else
+                                    <tr>
+                                        <td colspan="3">Vous n'avez pas encore loué de livres.</td>
+                                    </tr>
+                                @endif
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

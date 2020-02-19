@@ -40,9 +40,6 @@
                         $retrait = new Carbon\Carbon($location->date_retrait);
                         $retour = new Carbon\Carbon($location->date_max);
 
-                        $diff_retour = $retour->diffInDays($date);
-                        $diff_jours = $retrait->diffInDays($date);
-
                         $days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
                         $jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
                         $mois = ['janvier', 'févrirer', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];

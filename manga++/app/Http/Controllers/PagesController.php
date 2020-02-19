@@ -21,9 +21,10 @@ class PagesController extends Controller
     {
         $userId = auth()->user()->id;
         $user = User::find($userId);
+        $locations = Location::where('user_id', '=', $userId)->get();
 
         $title = 'Profil';
-        return view('profile',compact('title', 'user'));
+        return view('profile',compact('title', 'user', 'locations'));
     }
 
     /**
