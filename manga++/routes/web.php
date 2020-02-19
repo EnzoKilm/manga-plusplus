@@ -28,6 +28,7 @@ Route::get('/panier/ajouter/{id}', 'PagesController@cartAdd')->name('public.cart
 Route::get('/panier/remove/{id}', 'PagesController@cartRemove')->name('public.cart.remove');
 Route::get('/panier/reserver/', 'PagesController@cartBuy')->name('public.cart.buy');
 Route::get('/panier/reserver/reussi', 'PagesController@success')->name('public.cart.success');
+Route::get('/panier/reserver/erreur', 'PagesController@error')->name('public.cart.error');
 Route::get('/contact', 'PagesController@contact')->name('public.contact');
 Route::post('/recherche', 'PagesController@search')->name('public.search');
 

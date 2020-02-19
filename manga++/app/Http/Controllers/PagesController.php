@@ -79,21 +79,24 @@ class PagesController extends Controller
     public function cartBuy(Request $request)
     {
         $cart = Session::get('cart');
-        foreach($cart as $item) {
-            $location = new Location();
-            $location->book_id = $item->id;
-            $location->user_id = auth()->id();
-            $location->date_retrait = Carbon::now()->addDays(1)->setTime(12, 0, 0);
-            $location->date_max = Carbon::now()->addDays(8)->setTime(12, 0, 0);
-            $location->save();
+        if($cart != null) {
+            foreach($cart as $item) {
+                $location = new Location();
+                $location->book_id = $item->id;
+                $location->user_id = auth()->id();
+                $location->date_retrait = Carbon::now()->addDays(1)->setTime(12, 0, 0);
+                $location->date_max = Carbon::now()->addDays(8)->setTime(12, 0, 0);
+                $location->save();
 
-            $book = Book::find($item->id);
-            $book->availability = false;
-            $book->save();
+                $book = Book::find($item->id);
+                $book->availability = false;
+                $book->save();
+            }
+            Session::forget('cart');
+            return redirect()->route('public.cart.success');
         }
+        return redirect()->route('public.cart.error');
 
-        Session::forget('cart');
-        return redirect()->route('public.cart.success');
     }
 
     /**
@@ -105,6 +108,17 @@ class PagesController extends Controller
     {
         $title = 'Succès de la location';
         return view('cart-success',compact('title'));
+    }
+
+    /**
+     * Show the error location page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function error()
+    {
+        $title = 'Erreur de la location';
+        return view('cart-error',compact('title'));
     }
 
     /**

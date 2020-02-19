@@ -10,8 +10,8 @@
                     <li class="active">Panier</li>
                     </ol>
                 </div>
-                <h1>Succès de la location</h1>
-                <p>Vous pouvez venir retirer votre commande dès demain à 12h00.<br/>
+                <h1>Erreur de la location</h1>
+                <p>Votre panier est vide, impossible de valider la location.<br/>
             </div>
         </section>
 
