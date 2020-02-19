@@ -89,7 +89,7 @@
                         <div class="features_items"><!--features_items-->
                             <h2 class="title text-center">Articles en vedette</h2>
                             @php
-                                $books = App\Book::orderBy('id', 'desc')->take(3)->get();
+                                $books = App\Book::orderBy('id', 'desc')->take(6)->get();
                             @endphp
                             @foreach ($books as $book)
                                 <div class="col-sm-4">
