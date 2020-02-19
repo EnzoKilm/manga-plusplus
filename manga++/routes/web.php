@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/403', 'ErrorController@error403')->name('error.403');
 Route::get('/404', 'ErrorController@error404')->name('error.404');
 
-Route::get('/profil', 'PagesController@profile')->name('public.profile');
+Route::get('/profil', 'PagesController@profile')->name('public.profile')->middleware('usermiddleware');;
 Route::get('/panier', 'PagesController@cart')->name('public.cart');
 Route::get('/panier/ajouter/{id}', 'PagesController@cartAdd')->name('public.cart.add');
 Route::get('/panier/remove/{id}', 'PagesController@cartRemove')->name('public.cart.remove');

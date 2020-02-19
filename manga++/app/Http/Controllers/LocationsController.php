@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Location;
+use App\Book;
 
 class LocationsController extends Controller
 {
@@ -46,6 +47,7 @@ class LocationsController extends Controller
 
     /**
      * Set the location returnment state on true
+     * and sets the book availability on true
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
@@ -53,12 +55,19 @@ class LocationsController extends Controller
     {
         $location = Location::find($locationId);
         $location->ramenee = true;
+
+        $bookId = $location->book->id;
+        $book = Book::find($bookId);
+        $book->availability = true;
+
         $location->save();
+        $book->save();
         return back();
     }
 
     /**
      * Set the location returnment state on false
+     * and sets the book availability on false
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
@@ -66,7 +75,13 @@ class LocationsController extends Controller
     {
         $location = Location::find($locationId);
         $location->ramenee = false;
+
+        $bookId = $location->book->id;
+        $book = Book::find($bookId);
+        $book->availability = false;
+
         $location->save();
+        $book->save();
         return back();
     }
 }
