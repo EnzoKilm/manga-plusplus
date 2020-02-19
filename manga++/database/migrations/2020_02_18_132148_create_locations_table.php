@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Carbon\Carbon;
 
 class CreateLocationsTable extends Migration
 {
@@ -27,7 +28,7 @@ class CreateLocationsTable extends Migration
                     ->on('users')
                     ->onDelete('SET NULL');
             $table->timestamp('date_retrait');
-            $table->timestamp('date_max');
+            $table->timestamp('date_max')->default(Carbon::now());
             $table->boolean('retiree')->default(0);
             $table->boolean('ramenee')->default(0);
             $table->timestamps();
