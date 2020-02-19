@@ -128,14 +128,6 @@ class BooksController extends Controller
     public function show($bookId)
     {
         $book = Book::find($bookId);
-        $location = Location::find($bookId);
-
-        $diff_retrait = new Carbon($location->date_retrait);
-        if($diff_retrait->diffInDays(Carbon::now()) < 7) {
-            $book->availability = true;
-            $book->save();
-        }
-
         $books = Book::all();
     	return view('book', compact('book', 'books'));
     }

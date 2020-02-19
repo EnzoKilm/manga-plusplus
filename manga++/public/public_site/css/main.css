@@ -3025,3 +3025,34 @@ textarea {
 #erreur_404 .mb-5 {
     margin-bottom: 3rem !important;
 }
+
+#profile_content {
+    margin-bottom: 40px;
+}
+
+#profile_content .profile-img {
+    height: 150px;
+    width: 150px;
+}
+
+#profile_content .profile-center {
+    text-align: center;
+    position: relative;
+}
+
+#profile_content .profile-informations {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+#profile_content table th, #profile_content table td{
+    border: 1px solid #333333;
+}
+
+#profile_content table th {
+    background-color: #FE980F;
+}
+
+#profile_content table td {
+    background-color: #f7f7f7;
+}

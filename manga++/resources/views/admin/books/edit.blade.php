@@ -131,7 +131,11 @@
                 <div class="card-header py-3">
                     <input type="file" class="form-control" name="image" id="img_input">
                     <div class="card-header py-3">
-                        <img id="img_preview" src="{{ URL::to('/') }}/img_preview.png" alt="preview de l'image" />
+                        @if ($book->picture_src != "/img_preview.png")
+                            <img id="img_preview" src="{{ URL::to('/') }}{{ $book->picture_src }}" alt="preview de l'image" />
+                        @else
+                            <img id="img_preview" src="{{ URL::to('/') }}/img_preview.png" alt="preview de l'image" />
+                        @endif
                     </div>
                 </div>
             </div>

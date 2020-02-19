@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Book;
 use App\Location;
+use App\User;
 use Carbon\Carbon;
 
 class PagesController extends Controller
@@ -18,8 +19,11 @@ class PagesController extends Controller
      */
     public function profile()
     {
+        $userId = auth()->user()->id;
+        $user = User::find($userId);
+
         $title = 'Profil';
-        return view('profile',compact('title'));
+        return view('profile',compact('title', 'user'));
     }
 
     /**
