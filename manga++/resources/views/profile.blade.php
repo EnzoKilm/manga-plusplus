@@ -49,6 +49,7 @@
                         <table>
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Livre</th>
                                     <th>Date de retrait</th>
                                     <th>Date de retour</th>
@@ -58,6 +59,7 @@
                                 @if ($locations != null)
                                     @foreach ($locations as $location)
                                         <tr>
+                                            <td>{{ $location->id }}</td>
                                             <td>{{ $location->book->name }}</td>
                                             <?php
                                                 $date = Carbon\Carbon::now();
@@ -85,7 +87,7 @@
                                     @endforeach
                                 @else
                                     <tr>
-                                        <td colspan="3">Vous n'avez pas encore loué de livres.</td>
+                                        <td colspan="4">Vous n'avez pas encore loué de livres.</td>
                                     </tr>
                                 @endif
                             </tbody>
