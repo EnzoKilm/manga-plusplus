@@ -218,7 +218,7 @@
                                                         @endphp
                                                         @if ($availability == false)
                                                             <div style="cursor: not-allowed;">
-                                                                <a href="{{ route('public.cart.add', $book->id) }}" style="pointer-events: none;" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
+                                                                <a href="{{ route('public.cart.add', $book->id) }}" style="pointer-events: none;" class="btn btn-default add-to-cart"><i class="fas fa-ban"></i> Indisponible</a>
                                                             </div>
                                                         @else
                                                             <a href="{{ route('public.cart.add', $book->id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Ajouter au panier</a>
